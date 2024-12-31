@@ -13,6 +13,6 @@ export default {
     daisyui
   ],
   daisyui: {
-    themes: ["aqua", "light"],
+    themes: ["luxury", "light"],
   },
 }
