@@ -49,7 +49,7 @@ const Table = () => {
               <td>{client.rate}</td>
               <td>
                 <button
-                  className={` btn rounded-full w-20 ${
+                  className={` btn rounded-full w-20  ${
                     client.isActive
                       ? ` btn-primary`
                       : ` btn-outline btn-primary`
@@ -57,6 +57,14 @@ const Table = () => {
                 >
                   {client.isActive ? "Active" : "Inactive"}
                 </button>
+              </td>
+              <td>
+                <button className="btn btn-outline btn-secondary">
+                  Update
+                </button>
+              </td>
+              <td>
+                <button className="btn btn-outline btn-accent">Delete</button>
               </td>
             </tr>
           ))}
