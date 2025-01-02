@@ -1,4 +1,4 @@
-const Table = () => {
+const Table = (handleOpen) => {
   const clients = [
     {
       id: "1",
@@ -59,7 +59,10 @@ const Table = () => {
                 </button>
               </td>
               <td>
-                <button className="btn btn-outline btn-secondary">
+                <button
+                  className="btn btn-outline btn-secondary"
+                  onClick={() => handleOpen("edit")}
+                >
                   Update
                 </button>
               </td>
